@@ -14,7 +14,7 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 // middleware to parse request
 app.use(express.json());
 
-// mongoose connection
+// mongoDB connection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/bookDB', {
     useNewUrlParser: true,

@@ -31,13 +31,15 @@ const addBook = (req, res) => {
  * @param {Object} res - Express response object.
  */
 const getBooks = (req,res) => {
-    Book.find({}).select('-_id -__v -paragraphs -num_words').exec((err, book) => {
+    Book.find({}).select('-_id -__v -paragraphs -num_words').exec((err, books) => {
         if (err) {
             res.status(500).json({
                 error: `An unknown server error occurred.`
             });
         }
-        res.status(200).json(book);
+        res.status(200).json({
+            books: books
+        });
     })
 }
 
