@@ -15,7 +15,7 @@ To start MongoDB:
     ```
 - Ubuntu: Please refer to the documentation provided at the [link](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/).
 
-NOTE: Database and collection is automatically created with the first `POST` request to `/collaborative-writing/add`. No MongoDB configuration is required after installation - keeping MongoDB running is sufficient.
+NOTE: Database and collection is automatically created with the first `POST` request to `/api/books`. No MongoDB configuration is required after installation - keeping MongoDB running is sufficient.
    
 ### Step 2 - Start the node server
 To get the Node server running locally:
