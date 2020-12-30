@@ -3,7 +3,7 @@ version: '3'
 
 # Define all the services we need
 services:
-  app:  # our node application
+  app:  # node application
     container_name: dockerize-node
     restart: always # automatically restart if the app fails
     build: . # build the image from the dockerfile present in the current directory
@@ -14,7 +14,7 @@ services:
       - '80:3000' # map the ports as <host-port>:<container-port
     links: # link the app container to the mongo container
       - mongo
-  mongo:
+  mongo: # database
     container_name: mongo
     image: mongo # pull the mongo image from docker hub
     ports:
