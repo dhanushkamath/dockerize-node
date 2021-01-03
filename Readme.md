@@ -1,7 +1,7 @@
 # Dockerize-Node
 A simple RESTful dockerized Node + MongoDB app for adding and retrieving books.
 
-## Getting Started
+## Getting Started (without Docker)
 To install MongoDB, refer to the documentation provided [here](https://docs.mongodb.com/manual/installation/).
 ### Step 1 - Start MongoDB
 To start MongoDB:
