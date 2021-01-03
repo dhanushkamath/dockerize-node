@@ -4,19 +4,17 @@ version: '3'
 # Define all the services we need
 services:
   app:  # node application
-    container_name: dockerize-node
     restart: always # automatically restart if the app fails
     build: . # build the image from the dockerfile present in the current directory
-    environment:
+    environment: # environment variables
       - PORT=3000
       - MONGO_CONTAINER_NAME=mongo # this should be the same as the name of the DB service below
     ports: 
-      - '80:3000' # map the ports as <host-port>:<container-port
+      - '80:3000' # map the ports as <host-port>:<container-port . The container-port should be the same as the PORT defined in environment.
     links: # link the app container to the mongo container
       - mongo
   mongo: # database
-    container_name: mongo
-    image: mongo # pull the mongo image from docker hub
+    image: mongo:4.2 # pull the mongo image from docker hub
     ports:
       - '27017:27017'
 

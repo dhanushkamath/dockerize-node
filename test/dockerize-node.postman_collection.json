@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "dockerize-node",
+		"_postman_id": "cdc6db2a-18da-d7dc-e21a-6373c1cd892d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getBooks",
+			"request": {
+				"url": "http://localhost/api/books",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addBook",
+			"request": {
+				"url": "http://localhost/api/books",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Beer, Burgers and Cars: An Autobiography\",\n\t\"author\": \"Dhanush Kamath\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "testService",
+			"request": {
+				"url": "http://localhost/api",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

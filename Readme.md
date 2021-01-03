@@ -1,7 +1,14 @@
 # Dockerize-Node
 A simple RESTful dockerized Node + MongoDB app for adding and retrieving books.
 
+## Getting Started (with Docker)
+If you have Docker installed in your computer, you do not need to have Node.js or MongoDB installed. You can run the application with one single command:
+  ```bash
+  $ docker-compose up
+  ```
 ## Getting Started (without Docker)
+Without Docker, you need to install Node.js, NPM and MongoDB. </br>
+To install Node.js and NPM, refer to the documentation provided [here](https://nodejs.org/en/download/package-manager).</br>
 To install MongoDB, refer to the documentation provided [here](https://docs.mongodb.com/manual/installation/).
 ### Step 1 - Start MongoDB
 To start MongoDB:
