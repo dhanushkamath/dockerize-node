@@ -2,7 +2,7 @@
 A simple RESTful dockerized Node + MongoDB app for adding and retrieving books.
 
 ## Getting Started (with Docker)
-If you have Docker installed in your computer, you do not need to have Node.js or MongoDB installed. You can run the application with one single command:
+If you have Docker installed in your computer, you do not need to have Node.js or MongoDB installed. You can run the application with a single command:
   ```bash
   $ docker-compose up
   ```
